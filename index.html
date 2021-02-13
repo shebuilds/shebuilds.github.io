@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://smtpjs.com/v3/smtp.js"></script> 
+<script type="text/javascript">
+    function sendEmail() {
+        Email.send({
+            SecureToken: "64KpGDVbwtvFraCL,
+            To: "gwcberkeley@gmail.com",
+            From: document.getElementById('email-address').value,
+            Subject: document.getElementById('company-name').value + " Hackathon Sponsorship Inquiry",
+            Body: document.getElementById('sponsor-inquiry').value
+        }).then( 
+            message => alert("Email sent successfully")
+        );
+    }
+</script>
+<title>She Builds 2021<br></title>
+<!-- Bootstrap -->
+<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+<!-- Add Favicon-->
+<link href="assets/White.png" rel="icon" type="image/x-icon" />
+</head>
+
+<body>
+<!-- body code goes here --> 
+
+<!-- Nav Bar-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light"> <a class="navbar-brand" href="index.html"> <img id="logo" src="assets/White.png" width="150" height="82"> </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
+      aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item-1"> <a class="nav-link" href="#">Agenda</a> </li>
+      <li class="nav-item-2"> <a class="nav-link" href="#">Register Now</a> </li>
+      <li class="nav-item-3"> <a class="nav-link" href="#">Sponsor Us</a> </li>
+    </ul>
+  </div>
+</nav>
+<div class="homepage-container"> 
+  <!-- Hackathon Name Graphic -->
+  <div class="button-container"> <img src="images/ImgResponsive_Placeholder.png" alt="Placeholder image" width="850" height="0" class="img-fluid">
+    <button type="button" class="btn btn-primary btn-lg btn-block">Register Now</button>
+  </div>
+  <div class="logistics-overview">
+    <div class="logistics-content"> 
+      <!-- Hackathon When, Where, Who  -->
+      <div class="when"><strong>When:</strong><br>
+        04/01/21 - 04/02/21</div>
+      <div class="where"><strong>Where:</strong><br>
+        Virtual sessions through zoom</div>
+      <div class="who"><strong>Who:</strong><br>
+        Female identifying high school & college students</div>
+    </div>
+  </div>
+</div>
+
+<!-- Our Mission -->
+<div class="our-mission"> <img class="our-mission-text" src="assets/our_mission.png" alt="our mission" width="350">
+  <p id="body-text-1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+    the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+    scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+    electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+    Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+    PageMaker including versions of Lorem Ipsum.</p>
+  <p id="body-text-2">It is a long established fact that a reader will be distracted by the readable content of a page
+    when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+    letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop
+    publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem
+    ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes
+    by accident, sometimes on purpose (injected humour and the like).</p>
+</div>
+
+<!-- Tracks -->
+<div class="tracks">
+  <h1>Tracks</h1>
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active"> <img src="assets/our_mission.png" alt="First slide" width="300" height="300"
+            class="d-block w-100"> </div>
+      <div class="carousel-item"> <img class="d-block w-100" src="assets/White.png" width="300" height="300"
+            alt="Second slide"> </div>
+      <div class="carousel-item"> <img class="d-block w-100" src="assets/our_mission.png" width="300" height="300"
+            alt="Third slide"> </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev"> <span
+          class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a
+        class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next"> <span
+          class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a> </div>
+</div>
+
+<!-- Agenda -->
+<div class="agenda">
+  <h1>Agenda</h1>
+  <div class="agenda-container">
+    <div class="agenda-left">
+      <h1>April 18, 2021</h1>
+      <div class="left-container">
+        <div class="left-times">
+          <p class="agenda-time">8:00am - 9:00am</p>
+          <p class="agenda-time">9:00am - 2:00pm</p>
+          <p class="agenda-time">8:00am - 9:00am</p>
+          <p class="agenda-time">9:00am - 2:00pm</p>
+          <p class="agenda-time">8:00am - 9:00am</p>
+          <p class="agenda-time">9:00am - 2:00pm</p>
+          <p class="agenda-time">8:00am - 9:00am</p>
+          <p class="agenda-time">9:00am - 2:00pm</p>
+          <p class="agenda-time">8:00am - 9:00am</p>
+          <p class="agenda-time">9:00am - 2:00pm</p>
+        </div>
+        <div class="left-descriptions">
+          <p class="agenda-description">Lorem Ipsum is simply dummy text of</p>
+          <p class="agenda-description">Lorem Ipsum is simply dummy text of</p>
+          <p class="agenda-description">Lorem Ipsum is simply dummy text of</p>
+          <p class="agenda-description">Lorem Ipsum is simply dummy text of</p>
+          <p class="agenda-description">Lorem Ipsum is simply dummy text of</p>
+          <p class="agenda-description">Lorem Ipsum is simply dummy text of</p>
+          <p class="agenda-description">Lorem Ipsum is simply dummy text of</p>
+          <p class="agenda-description">Lorem Ipsum is simply dummy text of</p>
+          <p class="agenda-description">Lorem Ipsum is simply dummy text of</p>
+          <p class="agenda-description">Lorem Ipsum is simply dummy text of</p>
+        </div>
+      </div>
+    </div>
+    <div class="agenda-right">
+      <h1>April 19, 2021</h1>
+      <div class="right-container">
+        <div class="right-times">
+          <p class="agenda-time">8:00am - 9:00am</p>
+          <p class="agenda-time">9:00am - 2:00pm</p>
+          <p class="agenda-time">8:00am - 9:00am</p>
+          <p class="agenda-time">9:00am - 2:00pm</p>
+          <p class="agenda-time">8:00am - 9:00am</p>
+          <p class="agenda-time">9:00am - 2:00pm</p>
+          <p class="agenda-time">8:00am - 9:00am</p>
+          <p class="agenda-time">9:00am - 2:00pm</p>
+          <p class="agenda-time">8:00am - 9:00am</p>
+          <p class="agenda-time">8:00am - 9:00am</p>
+        </div>
+        <div class="right-descriptions">
+          <p class="agenda-description">Lorem Ipsum is simply dummy text of</p>
+          <p class="agenda-description">Lorem Ipsum is simply dummy text of</p>
+          <p class="agenda-description">Lorem Ipsum is simply dummy text of</p>
+          <p class="agenda-description">Lorem Ipsum is simply dummy text of</p>
+          <p class="agenda-description">Lorem Ipsum is simply dummy text of</p>
+          <p class="agenda-description">Lorem Ipsum is simply dummy text of</p>
+          <p class="agenda-description">Lorem Ipsum is simply dummy text of</p>
+          <p class="agenda-description">Lorem Ipsum is simply dummy text of</p>
+          <p class="agenda-description">Lorem Ipsum is simply dummy text of</p>
+          <p class="agenda-description">Lorem Ipsum is simply dummy text of</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Organizers -->
+<div class="organizers"> 
+  <!-- TO DO --> 
+  <br>
+  <h1>Organizers</h1>
+  <img src="images/temp-organizers.png" alt="hackathon organizers" style="width:100%;"> </div>
+
+<!-- Sponsor Us -->
+<div class="sponsor-us-form">
+  <h1>Sponsor Us</h1>
+  <h1 style="">Fill out your information below to download our sponsorship packet! We would love to work with you.</h1>
+  <form>
+    <div class="form-group">
+      <label for="fullName">Full Name</label>
+      <input type="text" class="form-control" id="full-name" aria-describedby="fullName" placeholder="Full name">
+    </div>
+    <div class="form-group">
+      <label for="comapnyName">Company</label>
+      <input type="text" class="form-control" id="company-name" placeholder="Company">
+    </div>
+    <div class="form-group">
+      <label for="emailAddress">Email Address</label>
+      <input type="text" class="form-control" id="email-address" aria-describedby="emailHelp" placeholder="Email">
+    </div>
+    <div class="form-group">
+      <label for="message">Inquiry</label>
+      <input type="text" class="form-control" id="sponsor-inquiry" aria-describedby="inquiry" placeholder="">
+    </div>
+    <div class="submit">
+      <button onclick="sendEmail()" type="submit" class="sponsor-button"><strong>S U B M I T</strong></button>
+    </div>
+  </form>
+</div>
+
+<!-- Sponsor Logos -->
+<div class="sponsor-logos">Add all href links to sponsor's logo</div>
+
+<!-- Frequently Asked Questions -->
+<div class="faq">
+  <h1>Frequently Asked Questions</h1>
+</div>
+
+<!-- Footer -->
+<footer>
+  <div id="footer-logo"> <img src="assets/White.png" alt="GWC-logo" width="150" height="82"> </div>
+  <div>
+    <h1>Contact Us</h1>
+    <h2 class="contact-info"><a href = "mailto: abc@example.com">gwcberkeley@gmail.com</a></h2>
+  </div>
+  <div>
+    <h1>Follow us</h1>
+    <a href="https://www.instagram.com/gwcberkeley/" class="contact-info">Instagram</a> <br>
+    <a href="https://www.facebook.com/gwcberkeley" class="contact-info">Facebook</a> </div>
+</footer>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-3.4.1.min.js"></script> 
+
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/popper.min.js"></script> 
+<script src="js/bootstrap-4.4.1.js"></script>
+</body>
+</html>

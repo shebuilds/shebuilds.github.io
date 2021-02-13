@@ -1,0 +1,166 @@
+@charset "UTF-8";
+/* CSS Document */
+.bg-light {
+  background-color: #0f3046 !important;
+}
+a.bg-light:hover {
+  color: white;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #0f3046;
+  margin-left: 10%;
+  margin-right: 10%;
+  color: white;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+  text-transform: uppercase;
+  padding: 40px;
+  letter-spacing: 3px;
+}
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+  color: #65D7BA;
+}
+.navbar-brand:hover {
+  opacity: 50%;
+}
+#navbarSupportedContent1 {
+  display: flex;
+  justify-content: flex-end;
+}
+#logo {
+  margin-top: 20%;
+}
+.button-container {
+  position: relative;
+  width: 50%;
+}
+.btn {
+  width: 200px;
+  height: 50px;
+  border-radius: 0px;
+  position: absolute;
+  display: inline-block;
+  text-transform: uppercase;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  ms-transform: translate(-50%, -50%);
+}
+.btn:hover {
+  background-color: #0F2F46;
+  border-color: white;
+}
+.btn-primary {
+  background-color: #0000;
+  border-color: white;
+}
+.img-fluid {
+  height: 400px;
+  margin-top: 50px;
+}
+.logistics-overview {
+  width: 400px;
+  height: 400px;
+  border: 3px solid white;
+  padding: 50px;
+  margin: 50px;
+  overflow: hidden;
+}
+.when, .where, .who {
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  line-height: 30px;
+  letter-spacing: 2px;
+  text-overflow: ellipsis;
+}
+.homepage-container {
+  display: flex;
+  justify-content: space-between;
+}
+p {
+  margin-top: 3%;
+  font-size: 12px;
+}
+h1 {
+  font-size: x-large;
+  text-transform: uppercase;
+  line-height: 30px;
+  letter-spacing: 2px;
+  text-overflow: ellipsis;
+}
+.tracks {
+  margin-top: 5%;
+}
+.agenda-container {
+  display: flex;
+}
+.agenda-right {
+  width: 50%;
+}
+.left-container, .right-container {
+  display: flex;
+}
+.agenda-left {
+  flex: 1;
+  justify-content: space-around;
+  margin-right: 5%;
+}
+.left-times, .right-times {
+  flex: 1;
+  border-right: 2px solid white;
+}
+.left-descriptions, .right-descriptions {
+  padding-left: 10%;
+}
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 40px;
+}
+.contact-info {
+  font-size: medium;
+  text-transform: uppercase;
+  line-height: 30px;
+  letter-spacing: 2px;
+  text-overflow: ellipsis;
+  color: white;
+}
+.contact-info:hover {
+  color: #65D7BA;
+}
+a {
+  color: white;
+}
+.form-control {
+  width: 100%;
+}
+a:hover {
+  color: #65D7BA;
+}
+form {
+  border-style: solid;
+  padding: 5%;
+  width: 50%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+input[type=text]:focus {
+  border: 3px solid #65D7BA;
+}
+#sponsor-inquiry {
+  width: 100%;
+  height: 150px;
+  resize: none;
+  text-align: left;
+}
+.sponsor-button {
+  margin-top: 5%;
+  border-radius: 0.25rem;
+  padding: 3%;
+  color: white;
+  background-color: #65D7BA;
+  width: 100%;
+  border-color: white;
+}
