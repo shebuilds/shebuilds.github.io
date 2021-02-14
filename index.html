@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	
 <script src="https://smtpjs.com/v3/smtp.js"></script> 
 <script type="text/javascript">
     function sendEmail() {
@@ -11,14 +13,14 @@
             SecureToken: "64KpGDVbwtvFraCL,
             To: "gwcberkeley@gmail.com",
             From: document.getElementById('email-address').value,
-            Subject: document.getElementById('company-name').value + " Hackathon Sponsorship Inquiry",
+            Subject: document.getElementById('company-name').value,
             Body: document.getElementById('sponsor-inquiry').value
         }).then( 
             message => alert("Email sent successfully")
         );
     }
 </script>
-<title>She Builds 2021<br></title>
+<title>She Builds 2021</title>
 <!-- Bootstrap -->
 <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
@@ -176,7 +178,8 @@
 <div class="sponsor-us-form">
   <h1>Sponsor Us</h1>
   <h1 style="">Fill out your information below to download our sponsorship packet! We would love to work with you.</h1>
-  <form>
+  <form action="https://formspree.io/f/myybakrp"
+  method="POST">
     <div class="form-group">
       <label for="fullName">Full Name</label>
       <input type="text" class="form-control" id="full-name" aria-describedby="fullName" placeholder="Full name">
@@ -191,7 +194,7 @@
     </div>
     <div class="form-group">
       <label for="message">Inquiry</label>
-      <textarea name="inquiry" class="form-control" id="sponsor-inquiry" aria-describedby="inquiry" placeholder="Any questions or comments"></textarea>
+      <input type="text" class="form-control" id="sponsor-inquiry" aria-describedby="inquiry" placeholder="">
     </div>
     <div class="submit">
       <button onclick="sendEmail()" type="submit" class="sponsor-button"><strong>S U B M I T</strong></button>

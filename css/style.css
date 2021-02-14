@@ -148,15 +148,14 @@ form {
 }
 input[type=text]:focus {
   border: 3px solid #65D7BA;
-  background-color: pink;
 }
-#sponsor-inquiry {
+#sponsor-inquiry {;
   height: 150px;
 }
 #sponsor-inquiry:focus {
-  border: 3px solid #65D7BA;
-  background-color: pink;
+	border: 3px solid #65D7BA;
 }
+
 .sponsor-button {
   margin-top: 5%;
   border-radius: 0.25rem;
