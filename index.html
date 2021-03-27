@@ -4,8 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	
+
 <script src="https://smtpjs.com/v3/smtp.js"></script> 
 <script type="text/javascript">
     function sendEmail() {
@@ -40,9 +39,9 @@
       aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent1">
     <ul class="navbar-nav ml-auto">
-      <li class="nav-item-1"> <a class="nav-link" href="#">Agenda</a> </li>
-      <li class="nav-item-2"> <a class="nav-link" href="#">Register Now</a> </li>
-      <li class="nav-item-3"> <a class="nav-link" href="#">Sponsor Us</a> </li>
+      <li class="nav-item-1"> <a class="nav-link" href="#agenda">Agenda</a> </li>
+      <li class="nav-item-2"> <a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://docs.google.com/forms/d/e/1FAIpQLSfOPSszweciRRjEtvixQlQ5udfwB1NrKAq7agbR_CYKa-cYwQ/viewform">Register Now</a> </li>
+      <li class="nav-item-3"> <a class="nav-link" href="#sponsor">Sponsor Us</a> </li>
     </ul>
   </div>
 </nav>
@@ -55,7 +54,7 @@
     <div class="logistics-content"> 
       <!-- Hackathon When, Where, Who  -->
       <div class="when"><strong>When:</strong><br>
-        04/01/21 - 04/02/21</div>
+        05/01/21 - 05/02/21</div>
       <div class="where"><strong>Where:</strong><br>
         Virtual sessions through zoom</div>
       <div class="who"><strong>Who:</strong><br>
@@ -104,7 +103,7 @@
 </div>
 
 <!-- Agenda -->
-<div class="agenda">
+<div class="agenda" id="agenda">
   <h1>Agenda</h1>
   <div class="agenda-container">
     <div class="agenda-left">
@@ -175,11 +174,15 @@
   <img src="images/temp-organizers.png" alt="hackathon organizers" style="width:100%;"> </div>
 
 <!-- Sponsor Us -->
-<div class="sponsor-us-form">
+<div class="sponsor-us-form" id="sponsor">
   <h1>Sponsor Us</h1>
   <h1 style="">Fill out your information below to download our sponsorship packet! We would love to work with you.</h1>
-  <form action="https://formspree.io/f/myybakrp"
-  method="POST">
+	  
+<form
+  action="https://formspree.io/f/myybakrp"
+  method="POST"
+>  
+	  
     <div class="form-group">
       <label for="fullName">Full Name</label>
       <input type="text" class="form-control" id="full-name" aria-describedby="fullName" placeholder="Full name">
@@ -190,11 +193,11 @@
     </div>
     <div class="form-group">
       <label for="emailAddress">Email Address</label>
-      <input type="text" class="form-control" id="email-address" aria-describedby="emailHelp" placeholder="Email">
+      <input type="email" name="_replyto" class="form-control" id="email-address" aria-describedby="emailHelp" placeholder="Email">
     </div>
     <div class="form-group">
-      <label for="message">Inquiry</label>
-      <input type="text" class="form-control" id="sponsor-inquiry" aria-describedby="inquiry" placeholder="">
+      <label for="message"><textarea class="form-control" id="sponsor-inquiry" placeholder="Inquiry" name="Inquiry"></textarea>
+		</label>
     </div>
     <div class="submit">
       <button onclick="sendEmail()" type="submit" class="sponsor-button"><strong>S U B M I T</strong></button>
@@ -215,7 +218,7 @@
   <div id="footer-logo"> <img src="assets/White.png" alt="GWC-logo" width="150" height="82"> </div>
   <div>
     <h1>Contact Us</h1>
-    <h2 class="contact-info"><a href = "mailto: abc@example.com">gwcberkeley@gmail.com</a></h2>
+    <h2 class="contact-info"><a href = "mailto: abc@example.com">shebuilds@berkeley.edu</a></h2>
   </div>
   <div>
     <h1>Follow us</h1>

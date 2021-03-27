@@ -146,11 +146,19 @@ form {
   margin-top: 5%;
   margin-bottom: 5%;
 }
+
 input[type=text]:focus {
   border: 3px solid #65D7BA;
 }
 #sponsor-inquiry {;
   height: 150px;
+}
+textarea {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;        /* Opera/IE 8+ */
+	
 }
 #sponsor-inquiry:focus {
 	border: 3px solid #65D7BA;
