@@ -1,14 +1,14 @@
 @charset "UTF-8";
 /* CSS Document */
 .bg-light {
-  background-color: #0f3046 !important;
+  background-color: #003046 !important;
 }
 a.bg-light:hover {
   color: white;
 }
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #0f3046;
+  background-color: #003046;
   margin-left: 10%;
   margin-right: 10%;
   color: white;
@@ -40,10 +40,10 @@ body {
   width: 200px;
   height: 50px;
   border-radius: 0px;
-  position: absolute;
+  position: relative;
   display: inline-block;
   text-transform: uppercase;
-  top: 50%;
+  top: 2%;
   left: 50%;
   transform: translate(-50%, -50%);
   ms-transform: translate(-50%, -50%);
@@ -58,7 +58,6 @@ body {
 }
 .img-fluid {
   height: 400px;
-  margin-top: 50px;
 }
 .logistics-overview {
   width: 400px;
@@ -81,7 +80,7 @@ body {
 }
 p {
   margin-top: 3%;
-  font-size: 12px;
+  font-size: 18px;
 }
 h1 {
   font-size: x-large;
