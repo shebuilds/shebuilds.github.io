@@ -36,6 +36,15 @@ body {
   position: relative;
   width: 50%;
 }
+#bear-comp {
+	max-width:100%;
+	max-height:100%;
+}
+#register-button {
+ 	align-content: center;
+	background-color: #0f9c90;
+}
+
 .btn {
   width: 200px;
   height: 50px;
@@ -43,10 +52,6 @@ body {
   position: relative;
   display: inline-block;
   text-transform: uppercase;
-  top: 2%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  ms-transform: translate(-50%, -50%);
 }
 .btn:hover {
   background-color: #0F2F46;
@@ -61,11 +66,12 @@ body {
 }
 .logistics-overview {
   width: 400px;
-  height: 400px;
+  height: 480px;
   border: 3px solid white;
   padding: 50px;
   margin: 50px;
   overflow: hidden;
+	position: relative;
 }
 .when, .where, .who {
   margin-bottom: 30px;
@@ -88,6 +94,17 @@ h1 {
   line-height: 30px;
   letter-spacing: 2px;
   text-overflow: ellipsis;
+}
+.our-mission{
+  position: relative;
+margin-top: 8%;
+  width: 100%;
+  height: 100%;
+}
+.our-mission-text{
+  position: relative;
+  margin: 0;
+  padding: 0;
 }
 .tracks {
   margin-top: 5%;
@@ -125,6 +142,9 @@ footer {
   letter-spacing: 2px;
   text-overflow: ellipsis;
   color: white;
+}
+.tracks {
+	margin-bottom: 10%;
 }
 .contact-info:hover {
   color: #65D7BA;
