@@ -113,7 +113,7 @@ margin-top: 8%;
   display: flex;
 }
 .agenda-right {
-  width: 50%;
+  width: 40%;
 }
 .left-container, .right-container {
   display: flex;
@@ -191,4 +191,43 @@ textarea {
   background-color: #65D7BA;
   width: 100%;
   border-color: white;
+}
+
+.accordion-section .panel-default > .panel-heading {
+    border: 0;
+    background: #65D7BA;
+	border-radius: 10px;
+    padding: 0;
+	outline: none;
+}
+.accordion-section .panel-default .panel-title a {
+    display: block;
+    font-size: 1.2rem;
+	outline: none;
+	text-decoration: none;
+}
+ a, a:hover, a:focus, a:active {
+      text-decoration: none;
+      color: inherit;
+ }
+.accordion-section .panel-default .panel-title a:after {
+    font-family: 'FontAwesome';
+	content: "△";
+    font-style: normal;
+    font-size: 3rem;
+	outline: none;
+    color: white;
+    float: right;
+    margin-top: -12px;
+	text-decoration: none;
+	transform: scale(.5);
+}
+.accordion-section .panel-default .panel-title a.collapsed:after {
+    content: "▽";
+	transform: scale(.5);
+	color: white;
+	text-decoration: none;
+}
+.accordion-section .panel-default .panel-body {
+    font-size: 1.2rem;
 }
