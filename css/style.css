@@ -263,3 +263,32 @@ textarea {
 		flex-direction: column;
 	}
 }
+@media screen and (max-width: 1200px){
+	.agenda-container {
+		display: flex;
+		flex-direction: column;
+	}
+	.agenda-left {
+		width: 100%;
+		margin-bottom: 10%;
+	}
+	.agenda-right {
+		width: 100%;
+	}
+}
+.agenda-pictures {
+	transform: scale(0.5);
+	margin-bottom: 5%;
+}
+@media screen and (max-width: 720px){
+	.agenda-container {
+		display: none;
+	}
+	footer {
+		display: block;
+		margin: 2%;
+	}
+	#footer-logo {
+		margin-bottom: 10%;
+	}
+}
